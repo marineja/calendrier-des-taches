@@ -14,7 +14,7 @@ body {
 .block {
 	width: 800px;
 	height: 800px;
-	background: linear-gradient(45deg, blue, green);
+	background: linear-gradient(45deg, blue, #87CEEB);
 	border-radius: 30px;
 	display: grid;
 	grid-template: 100px, 300px, 100px, 300px / repeat(8, 100px);
@@ -31,4 +31,19 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.blocklogoetinfos{
+	grid-area: 2 / 1/ 3/ -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.blocklogo{
+	width: 50%;
+}
+
+img{
+	border-radius: 50px;
 }
