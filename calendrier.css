@@ -3,3 +3,32 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+	color: white;
+	background-color: black;
+	height: 100%;
+}
+
+.block {
+	width: 800px;
+	height: 800px;
+	background: linear-gradient(45deg, blue, green);
+	border-radius: 30px;
+	display: grid;
+	grid-template: 100px, 300px, 100px, 300px / repeat(8, 100px);
+	margin: 100px auto 100px;
+	position: relative;
+	border: 1px solid white;
+}
+
+h1 {
+
+/* debut rangée/ debut colone/ fin rangée/ fin colone */
+
+	grid-area: 1 / 1 / 2 / -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
