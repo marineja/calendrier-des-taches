@@ -4,7 +4,9 @@ let resultatApi;
 
 const temps = document.querySelector('.temps');
 const temperature = document.querySelector('.temperature');
-const tlocalisation = document.querySelector('.localisation');
+const localisation = document.querySelector('.localisation');
+const heure = document.querySelectorAll('.prévisiondelheure');
+const degrepourheure = document.querySelectorAll('.heuredegréprévision');
 
 
 if (navigator.geolocation) {
@@ -28,5 +30,24 @@ function AppelDeLAPI(long, lat) {
 		console.log(data);
 		resultatApi = data;
 		temps.innerText = resultatApi.current.weather[0].description;
+		temperature.innerText = `${Math.trunc(resultatApi.current.temp)}°`;
+		localisation.innerText = resultatApi.timezone;
+
+		// toutes les 3h avec les temperatures 
+		let heureActuelle = new Date().getHours();
+		for (let i = 0; i < heure.length; i++) {
+			let heureIncrementé = heureActuelle + i * 3 ;
+
+			if (heureIncrementé > 24) {
+				heure[i].innerText = `${heureIncrementé - 24} h`;
+			} else if(heureIncrementé === 24){
+					heure[i].innerHTML = "00 h";
+				} else {
+				heure[i].innerText = `${heureIncrementé} h`;
+				}
+			
+			
+		}
+
 	})
 }
