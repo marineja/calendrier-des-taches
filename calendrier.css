@@ -69,7 +69,7 @@ img:hover {
 	font-size: 40px;
 }
 
-.blockinfos .temps:: first-letter {
+.blockinfos .temps::first-letter {
 	text-transform: capitalize;
 }
 
