@@ -92,5 +92,22 @@ img:hover {
 
 .blockjoursprevision, .blockheureetprevisions{
 	display: grid;
-	grid-template: 100px / repeat(7, 1fr);
+	grid-template: 100% / repeat(7, 1fr);
+}
+
+.blockheure, .blockjours{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-top: 1px solid white;
+	font-size: 21px;
+}
+
+.blockheure:not(:last-child) , .blockjours:not(:last-child){
+	border-right: 1px solid white;
+}
+
+.blockheure p , .blockjours p {
+	margin: 5px;
 }
