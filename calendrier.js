@@ -1,3 +1,5 @@
+import tableauJoursEnOrdre from './lesjours.js';
+//console.log("depuis calendrier.js:" + tableauJoursEnOrdre);
 
 const CLEFAPI = 'a297178d368ef54faf2c8580925721e1'
 let resultatApi;
@@ -7,6 +9,8 @@ const temperature = document.querySelector('.temperature');
 const localisation = document.querySelector('.localisation');
 const heure = document.querySelectorAll('.prévisiondelheure');
 const degrepourheure = document.querySelectorAll('.heuredegréprévision');
+const joursDiv = document.querySelectorAll('.nomdujour');
+const tempsJoursDiv = document.querySelectorAll('.tempsdujour');
 
 
 if (navigator.geolocation) {
@@ -49,5 +53,22 @@ function AppelDeLAPI(long, lat) {
 			
 		}
 
+		//temps toutes les 3h
+
+		for(let j = 0; j < degrepourheure.length; j++) {
+			degrepourheure[j].innerText = `${Math.trunc(resultatApi.hourly[j * 3].temp)}°`;
+		}
+
+
+		// mettre les trois premieres lettres des jours
+		for(let k = 0; k < tableauJoursEnOrdre.length; k++) {
+		joursDiv[k].innerText = tableauJoursEnOrdre[k].slice(0,3);
+		}
+
+		// ajouter le temps pour chaques jours
+
+		for(let m = 0; m < 7; m++){
+			tempsJoursDiv[m].innerText = `${Math.trunc(resultatApi.daily[m + 1].temp.day)}°`
+		}
 	})
 }
