@@ -81,3 +81,16 @@ img:hover {
 	font-size: 40px;
 	word-wrap: break-word;
 }
+
+.blockheureetprevisions{
+	grid-area: 3 / 1 / 4 / -1;
+}
+
+.blockjoursprevision{
+	grid-area: 4 / 1 / 5 / -1;
+}
+
+.blockjoursprevision, .blockheureetprevisions{
+	display: grid;
+	grid-template: 100px / repeat(7, 1fr);
+}
