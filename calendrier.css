@@ -12,12 +12,12 @@ body {
 }
 
 .block {
-	width: 800px;
+	width: 1600px;
 	height: 800px;
 	background: linear-gradient(45deg, blue, #87CEEB);
 	border-radius: 30px;
 	display: grid;
-	grid-template: 100px, 300px, 100px, 300px / repeat(8, 100px);
+	grid-template: 100px 300px 100px 300px / repeat(8, 200px);
 	margin: 100px auto 100px;
 	position: relative;
 	border: 1px solid white;
@@ -46,4 +46,38 @@ h1 {
 
 img{
 	border-radius: 50px;
+	box-shadow: 0 0 5px black;
+	transform: rotate(0deg);
+	transition: 1s;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+
+img:hover {
+	transform: rotate(350deg);
+}
+
+
+
+.blockinfos{
+	width: 50%;
+}
+
+.blockinfos .temps {
+	font-size: 40px;
+}
+
+.blockinfos .temps:: first-letter {
+	text-transform: capitalize;
+}
+
+.blockinfos .temperature {
+	font-size: 60px;
+}
+
+.blockinfos .localisation {
+	font-size: 40px;
+	word-wrap: break-word;
 }
