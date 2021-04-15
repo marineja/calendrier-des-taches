@@ -7,14 +7,14 @@
 body {
 	font-family: 'Noto Sans', sans-serif;
 	color: #601700;
-	background-color:black;
+	background-color:#9c0f66;
 	height: 100%;
 }
 
 .block {
 	width: 1600px;
 	height: 800px;
-	background: linear-gradient(45deg, #c0e6f5, #fcdcfd);
+	background-color: #ffffff;
 	border-radius: 30px;
 	display: grid;
 	grid-template: 100px 300px 100px 300px / repeat(8, 200px);
@@ -48,7 +48,7 @@ h1 {
 
 img{
 	border-radius: 50px;
-	box-shadow: 0 0 5px black;
+	box-shadow: 0 0 5px rgb(182, 119, 61);
 	transform: rotate(0deg);
 	transition: 1s;
 	display: block;
@@ -126,11 +126,12 @@ textarea {
 	height:150px;
 	margin:auto; 
 	display:block;
-	background-color: #AF8340;
+	background-color: rgb(44, 148, 108);
 	border-radius: 10px;
 	font-family: font-family: 'Poppins', sans-serif;
 	box-shadow: 0 0 5px black;
 	padding-top: 10px;
+	color: white;
 }
 
 
