@@ -7,7 +7,7 @@
 body {
 	font-family: 'Noto Sans', sans-serif;
 	color: white;
-	background-image:url(pink-cloud-sky-art-skyline.jpg);
+	background-color:#fcdcfd;
 	height: 100%;
 }
 
@@ -31,6 +31,8 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 47px;
+	font-family: font-family: 'Poppins', sans-serif;;
 }
 
 .blocklogoetinfos{
@@ -117,4 +119,6 @@ textarea {
 	height:150px;
 	margin:auto; 
 	display:block;
+	background-color: #c4f5fc;
+	border-radius: 20px;
 }
