@@ -97,7 +97,7 @@ jQuery(function($){
 				for(var id in ls){
 					if(id != 'href'){
 						$('#'+id).val(ls[id]);
-						
+						datas[id] = ls[id];
 					}
 				}
 			}
