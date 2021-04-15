@@ -85,9 +85,24 @@ jQuery(function($){
 
 		var forms = this;
 		var datas = {};
+		var ls = false;
 		datas.href = window.location.href;
 
 		// nous allons récuperer les données du localstorage
+
+		if(localStorage['formBackUp']){
+			ls = JSON.parse(localStorage['formBackUp']);
+			//console.log(ls);
+			if(ls.href == datas.href){
+				for(var id in ls){
+					if(id != 'href'){
+						$('#'+id).val(ls[id]);
+						
+					}
+				}
+			}
+
+		}
 
 		forms.find('imput,textarea').keyup(function(e){
 			datas[$(this).attr('id')] = $(this).val();
