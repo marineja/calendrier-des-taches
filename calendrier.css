@@ -7,7 +7,7 @@
 body {
 	font-family: 'Noto Sans', sans-serif;
 	color: white;
-	background-color: black;
+	background-image:url(pink-cloud-sky-art-skyline.jpg);
 	height: 100%;
 }
 
@@ -110,4 +110,11 @@ img:hover {
 
 .blockheure p , .blockjours p {
 	margin: 5px;
+}
+
+textarea {
+	width:80% ;
+	height:150px;
+	margin:auto; 
+	display:block;
 }

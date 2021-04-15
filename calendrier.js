@@ -72,3 +72,34 @@ function AppelDeLAPI(long, lat) {
 		}
 	})
 }
+
+
+jQuery(function($){
+
+	
+	$.fn.formBackUp = function() {
+
+		if(!localStorage){
+			return false;
+		}
+
+		var forms = this;
+		var datas = {};
+		datas.href = window.location.href;
+
+		// nous allons récuperer les données du localstorage
+
+		forms.find('imput,textarea').keyup(function(e){
+			datas[$(this).attr('id')] = $(this).val();
+			//console.log(datas);
+			localStorage.setItem('formBackUp',JSON.stringify(datas));
+
+
+		});
+		console.log(localStorage);
+	}
+
+		$('form').formBackUp();
+	
+
+});
