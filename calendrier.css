@@ -6,8 +6,8 @@
 
 body {
 	font-family: 'Noto Sans', sans-serif;
-	color: rgb(75, 73, 73);
-	background-color:#fcdcfd;
+	color: #601700;
+	background-color:black;
 	height: 100%;
 }
 
@@ -20,7 +20,7 @@ body {
 	grid-template: 100px 300px 100px 300px / repeat(8, 200px);
 	margin: 100px auto 100px;
 	position: relative;
-	box-shadow: 0 0 10px black;
+	box-shadow: 0 0 10px white;
 }
 
 h1 {
@@ -103,11 +103,11 @@ img:hover {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	border-top: 1px solid white;
+	border-top: 1px solid rgb(49, 78, 64);
 }
 
 .blockheure:not(:last-child) , .blockjours:not(:last-child){
-	border-right: 1px solid white;
+	border-right: 1px solid rgb(49, 78, 64);
 }
 
 .blockheure p , .blockjours p {
@@ -118,6 +118,7 @@ img:hover {
 form{
 	font-size: 15px;
 	margin-bottom:15px;
+
 }
 
 textarea {
@@ -125,7 +126,7 @@ textarea {
 	height:150px;
 	margin:auto; 
 	display:block;
-	background-color: #c4f5fc;
+	background-color: #AF8340;
 	border-radius: 10px;
 	font-family: font-family: 'Poppins', sans-serif;
 	box-shadow: 0 0 5px black;
