@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Noto Sans', sans-serif;
-	color: white;
+	color: rgb(75, 73, 73);
 	background-color:#fcdcfd;
 	height: 100%;
 }
@@ -14,7 +14,7 @@ body {
 .block {
 	width: 1600px;
 	height: 800px;
-	background: linear-gradient(45deg, blue, #87CEEB);
+	background: linear-gradient(45deg, #c0e6f5, #fcdcfd);
 	border-radius: 30px;
 	display: grid;
 	grid-template: 100px 300px 100px 300px / repeat(8, 200px);
@@ -141,7 +141,7 @@ textarea {
 	position: fixed;
 	z-index: 1000;
 	top: 0;
-	animation: animeloader 3s forwards;
+	animation: animeloader 2s forwards;
 
 }
 @keyframes animeloader {
@@ -167,7 +167,7 @@ textarea {
 :root {
   --dimension: 100px;
   --thickness: 4px;
-  --color: blue;
+  --color: rgb(75, 73, 73);
 }
 
 @keyframes rotate {
