@@ -86,7 +86,7 @@ jQuery(function($){
 		var forms = this;
 		var datas = {};
 		var ls = false;
-		datas.href = 'https://marineja.github.io/calendrier-des-taches/';
+		datas.href = 'window.location.href';
 		
 
 		// nous allons récuperer les données du localstorage
