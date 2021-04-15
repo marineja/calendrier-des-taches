@@ -136,7 +136,7 @@ textarea {
 
 
 .tempsdechargement{
-	background-color: #fcdcfd;
+	background-color: rgb(255, 255, 255);
 	width: 100%;
 	height: 100%;
 	opacity: 1;
@@ -169,7 +169,7 @@ textarea {
 :root {
   --dimension: 100px;
   --thickness: 4px;
-  --color: rgb(75, 73, 73);
+  --color: #9c0f66;
 }
 
 @keyframes rotate {
