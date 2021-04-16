@@ -12,12 +12,12 @@ body {
 }
 
 .block {
-	width: 1600px;
+	width: 1504px;
 	height: 800px;
 	background-color: #ffffff;
 	border-radius: 30px;
 	display: grid;
-	grid-template: 100px 300px 100px 300px / repeat(8, 200px);
+	grid-template: 100px 300px 100px 300px / repeat(8, 188px);
 	margin: 100px auto 100px;
 	position: relative;
 	box-shadow: 0 0 10px white;
