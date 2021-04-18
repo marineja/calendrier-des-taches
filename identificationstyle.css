@@ -94,6 +94,14 @@ h3{
     border-bottom-color: rgb(182, 119, 61);
 }
 
-/* animation des sections du formulaire/*
+/* animation des sections du formulaire*/
 
+.blocformulaire ..sectionduformulaire:focus-within label, .blocformulaire .sectionduformulaire.animation label{
+    top: 0px;
+    transform: translateY(-100%);
+    color: rgb(182, 119, 61);
+}
 
+.blocformulaire ..sectionduformulaire:focus-within input, .blocformulaire .sectionduformulaire.animation input{
+    border-bottom-color: rgb(182, 119, 61);
+}
