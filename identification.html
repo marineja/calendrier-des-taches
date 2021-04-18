@@ -13,11 +13,11 @@
                 <h3><strong>Identification:</strong></h3>
                 <div class="sectionduformulaire">
                     <label for="utilisateur">Utilisateur</label>
-                    <input type="text" id="utilisateur" required maxlength="10">
+                    <input type="text" name="utilisateur" id="utilisateur" placeholder="utilisateur" required maxlength="10">
                 </div>
                 <div class="sectionduformulaire">
                     <label for="mdp">Mot de passe</label>
-                    <input name="mdp" type="text" id="mdp" required maxlength="10">
+                    <input name="mdp" type="text" id="mdp" placeholder="mdp" required maxlength="10">
                 </div>
                 <div class="sectionduformulaire">
                     <input type="submit" value="LOGIN" class="Boutonlogin">
@@ -31,6 +31,22 @@
 
 
         <script>
+            // animation identifiant et mdp (ecriture qui reste ou suprimée)
+
+            const inputs = document.querySelectorAll('input';)
+            
+            for (let i = 0; i < inputs.length; i++){
+                let ecrire = inputs[i];
+                ecrire.addEventListener('input', (e) =>{
+                    if(e.target.value != ""){
+                        e.target.parentNode.classList.add('animation');
+                    } else if((e.target.value == "")) {
+                        e.target.parentNode.classList.remove('animation');
+                    }
+                })
+            }
+
+
 
 
         </script>
