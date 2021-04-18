@@ -19,6 +19,7 @@ body{
     padding: 25px;
     background: white;
     border-radius: 3px;
+    box-shadow: 0 0 10px white;
 }
 
 h3{
@@ -108,4 +109,12 @@ h3{
     border-bottom-color: rgb(182, 119, 61);
 }
 
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50px;
+	box-shadow: 0 0 5px rgb(182, 119, 61);
+    margin-top: 25px;
+}
 
