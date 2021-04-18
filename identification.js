@@ -4,6 +4,7 @@ document.getElementById("inscription").addEventListener("submit", function(e) {
     var erreur;
     var pseudo = document.getElementById("pseudo");
     var mdp = document.getElementById("mdp");
+    var inputs = this.getElementsByTagName("input");
 
     if (!pseudo.value) {
         erreur = "Veuillez renseigner un identifiant";
